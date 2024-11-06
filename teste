@@ -1,1 +1,16 @@
-teste
+1º) pip install django
+2º) python -m venv venv
+3º) source venv/bin/activate
+4º) django-admin startproject escola .
+5º) django-admin startapp cursos
+6º) adiciona o app em INSTALLED_APPS
+7º)
+importa o os 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL= 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+8º) Instalando a Api:
+pip install djangorestframework markdown django-filter
+9º) pip freeze > requirements.txt
+10º) adiciona no INSTALLED_APPS: 'django_filters' e 'rest_framework',
